@@ -19,8 +19,8 @@
 \end{tikzpicture}]]></latex-image></image></figure>
 
 <p>We will typically use the letters <m>G, H</m>, or <m>\Gamma</m> (capital Gamma) to denote a graph.  The <q>dots</q> or the graph are called <em>vertices</em> or <em>nodes</em>, and the lines between the dots are called <em>edges</em>. Graphs occur frequently in the <q>real world</q>, and typically show how something is connected, with the vertices representing the things and the edges showing connections.  <ul>
-<li><em>Transit networks:</em> The London tube map is a graph, with the vertices representing the stations, and an edge between two stations if the tube goes directly between them.  More generally, rail maps in general are graphs, with vertices stations and edges representing line, and road maps as well, with vertices being cities, and edges being roads.</li>
-<li><em>Social networks:</em> The typical example would be Facebook, with the vertices being people, and edge between two people if they are friends on Facebook. </li>
+<li><em>Transit networks:</em> The London tube map is a graph, with the vertices representing the stations, and an edge between two stations if the tube goes directly between them.  More generally, rail maps in general are graphs, with vertices stations and edges representing track, and road maps as well, with vertices being cities, and edges being roads.</li>
+<li><em>Social networks:</em> The typical example would be Facebook, with the vertices being people, and an edge between two people if they are friends on Facebook. </li>
 <li><em>Molecules in Chemistry:</em> In organic chemistry, molecules are made up of different atoms, and are often represented as a graph, with the atoms being vertices, and edges representing covalent bonds between the vertices.</li>
 </ul></p>
 <figure xml:id="fig_caffeinegraph"><caption>A Caffeine Molecule, courtesey <url href="https://commons.wikimedia.org/wiki/File:Caffeine_molecule.png">Wikimedia Commons</url></caption><image width="90%" source="images/Caffeine_molecule.png" />
@@ -41,6 +41,8 @@
 <p>Another consequence is that we require each edge to be a two element subset of <m>V(G)</m>, and so we do not allow for the possibility of an edge between a vertex and itself, often called a <em>loop</em>.</p>
 <p>Graphs without multiple edges or loops are sometimes called <em>simple graphs</em>.  We will sometimes deal with graphs with multiple edges or loops, and will try to be explicit when we allow this.  Our default assumption is that our graphs are simple.</p>
 <p>Another consequence of the definition is that edges are symmetric, and work equally well in both directions.  This is not always the case: in road systems, there are often one-way streets.  If we were to model Twitter or Instragram as a graph, rather than the symmetric notion of friends we would have to work with <q>following</q>.  To capture these, we have the notion of a <em>directed graph</em>, where rather than just lines, we think of the edges as arrows, pointing from one vertex (the source) to another vertex (the target).  To model Twitter or Instagram, we would have an ege from vertex <m>a</m> to vertex <m>b</m> if <m>a</m> followed <m>b</m>.
+</p>
+<p>In real world examples, the set of vertices is finite, but this is not a requirement in the definition.
 </p>
 </subsection>
 <subsection>

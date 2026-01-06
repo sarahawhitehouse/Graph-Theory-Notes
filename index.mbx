@@ -80,7 +80,7 @@
 </docinfo>
 
 <book xml:id="MAS341">
-  <title>MAS341: Graph Theory</title>
+  <title>MPS310: Graph Theory</title>
   <frontmatter>
   </frontmatter>
   <xi:include href="./ch_intro.mbx" />
